@@ -1,0 +1,6 @@
+[submodule "stylelint-config"]
+	path = stylelint-config
+	url = git@git.unl.edu:soft-core/soft-260/stylelint-config.git
+[submodule "eslint-config"]
+	path = eslint-config
+	url = git@git.unl.edu:soft-core/soft-260/eslint-config.git

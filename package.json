@@ -1,0 +1,30 @@
+{
+  "name": "@unlsoft/starter-code",
+  "version": "1.0.0",
+  "description": "A project skeleton to be used as starter code for labs and homework.",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "postinstall:stylelint-config": "cd stylelint-config && npm install",
+    "postinstall:eslint-config": "cd eslint-config && npm install",
+    "postinstall:app": "cd minimal-app && npm install",
+    "postinstall": "run-s postinstall:**",
+    "lint:app": "cd minimal-app && npm run lint",
+    "lint": "run-s --continue-on-error lint:**",
+    "test-once:app": "cd minimal-app && npm run test-once",
+    "test-once": "run-s --continue-on-error test-once:**",
+    "test": "run-s test-once",
+    "start": "cd minimal-app && npm run start",
+    "build:app": "cd minimal-app && npm run build",
+    "build": "run-s build:**"
+  },
+  "devDependencies": {
+    "ghooks": "^2.0.4",
+    "npm-run-all": "^4.1.5"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}

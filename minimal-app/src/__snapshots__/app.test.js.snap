@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the app has one labeled button that displays the value from the store 1`] = `
+<div>
+  <label>
+    Taps
+    : 
+    <button
+      class="blue"
+    >
+      9999
+    </button>
+  </label>
+</div>
+`;

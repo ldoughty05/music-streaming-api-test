@@ -1,0 +1,18 @@
+{
+  "short_name": "Minimal App",
+  "name": "Minimal React Redux App",
+  "description": "A minimal app to be used as starter code for labs and homework.",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "rgba(208 0 0 / 100%)",
+  "background_color": "rgba(255 255 255 / 100%)"
+}

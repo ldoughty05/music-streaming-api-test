@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.eol": "LF",
+		"files.exclude": {
+			"**/node_modules": true
+		},
+		"files.trimFinalNewlines": true,
+		"files.trimTrailingWhitespace": true
+	}
+}
