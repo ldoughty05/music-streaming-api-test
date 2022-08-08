@@ -1,13 +1,15 @@
-import { Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import { Counter } from './features/counter/counter.js';
 
 export function App() {
-  return (
+  const page =
     <>
-      <Route exact path={'/'}>
-        <Counter label={'Taps'} />
-      </Route>
-    </>
+      <Counter label={'Taps'} />
+    </>;
+  return (
+    <Routes>
+      <Route path={'/*'} element={page} />
+    </Routes>
   );
 }

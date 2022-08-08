@@ -1,5 +1,3 @@
-/* eslint-disable no-magic-numbers */
-
 import { render } from '@testing-library/react';
 import './testing/mockRedux.js';
 import { MemoryRouter as Router } from 'react-router-dom';

@@ -1,5 +1,3 @@
-/* eslint-disable no-magic-numbers */
-
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '../../testing/mockRedux.js';
@@ -31,10 +29,10 @@ describe('the button', () => {
     render(<Counter label={'Foo'} />);
     expect(screen.getByRole('button')).toHaveClass('blue');
   });
-  test('increments the value in the store when clicked', () => {
+  test('increments the value in the store when clicked', async() => {
     selectValue.mockReturnValue(9999);
     render(<Counter label={'Foo'} />);
-    userEvent.click(screen.getByRole('button'));
+    await userEvent.click(screen.getByRole('button'));
     expect(setValue).toHaveBeenCalledTimes(1);
     expect(setValue).toHaveBeenCalledWith({
       value: 9999 + 1,

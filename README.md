@@ -9,7 +9,7 @@ API, the Redux Toolkit (RTK), React Router, Jest, and the React Testing Library
 
 Recursively clone this repository and `cd` into the root folder:
 
-```
+```bash
 $ git clone --recursive git@git.unl.edu:soft-core/soft-260/react-redux-starter-code.git
 $ cd react-redux-starter-code
 ```
@@ -19,12 +19,12 @@ $ cd react-redux-starter-code
 
 Install dependencies:
 
-```
+```bash
 $ npm install
 ```
 
-(Near the end you may see some warnings because `create-react-app` transitively
-depends on some deprecated packages.)
+(You may see a few warnings because `create-react-app` transitively depends on
+some deprecated packages.)
 
 Optionally run the linter and the test suite:
 
@@ -110,14 +110,6 @@ roles from MVC.
     `index.html`.  In this case the CSS forces a letterboxed portrait layout and
     specifies a sans-serif font.
 
-*   The file `minimal-app/src/service-worker.js` acts as a proxy server, which
-    among other things makes it possible to run a PWA while offline.  (See
-    <https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API> for
-    more information.)
-
-*   The file `minimal-app/src/serviceWorkerRegistration.js` registers the
-    service worker so that the browser knows about it.
-
 ## Model and Controller Code
 
 *   The file `minimal-app/src/app/store.js` combines the models provided by the
@@ -131,9 +123,9 @@ roles from MVC.
 ## View Code
 
 *   The file `minimal-app/src/app.js` implements the React component
-    representing the entire app.  In this case only one route, `/`, is
-    implemented, but the returned fragment is intentionally written so that it
-    is easy to add additional routes.
+    representing the entire app.  In this case only the universal route, `/*`,
+    is implemented, but the returned fragment is intentionally written so that
+    it is easy to add additional routes.
 
 *   The file `minimal-app/src/features/counter/counter.js` implements a React
     component that counts the number of times a user has tapped a button.  This
@@ -187,4 +179,5 @@ following:
 *  Rename the folder from `minimal-app` to something descriptive and change the
    corresponding entries in the outer `package.json`.
 
-*  Rerun `npm install` to update `package-lock.json` based on the above changes.
+*  Rerun `npm install` in the outer folder to update `package-lock.json` based
+   on the above changes.

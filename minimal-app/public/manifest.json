@@ -8,11 +8,17 @@
       "type": "image/svg+xml",
       "sizes": "192x192 512x512",
       "purpose": "any maskable"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",
   "display": "standalone",
   "orientation": "portrait",
-  "theme_color": "rgba(208 0 0 / 100%)",
-  "background_color": "rgba(255 255 255 / 100%)"
+  "theme_color": "#d00000",
+  "background_color": "#ffffff"
 }

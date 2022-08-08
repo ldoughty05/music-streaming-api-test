@@ -1,5 +1,3 @@
-/* eslint-disable no-magic-numbers */
-
 import counterSlice, {
   selectValue,
   setValue,
