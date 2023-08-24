@@ -40,6 +40,7 @@
     "workbox-streams": "^6.5.3"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@unlsoft/eslint-config": "file:../eslint-config",
     "@unlsoft/stylelint-config": "file:../stylelint-config",
     "eslint-plugin-jest-dom": "^4.0.2",
