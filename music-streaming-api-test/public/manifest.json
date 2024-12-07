@@ -1,7 +1,7 @@
 {
-  "short_name": "Minimal App",
-  "name": "Minimal React Redux App",
-  "description": "A minimal app to be used as starter code for labs and homework.",
+  "short_name": "Music Stream",
+  "name": "Music Streaming API Test",
+  "description": "Testing the ability to implement streaming from Soundcloud, Apple Music, etc in my own application.",
   "icons": [
     {
       "src": "logo.svg",

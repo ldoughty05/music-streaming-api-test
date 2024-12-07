@@ -1,7 +1,7 @@
 {
-  "name": "@unlsoft/minimal-app",
+  "name": "music-streaming-api-test",
   "version": "1.0.0",
-  "description": "A minimal app to be used as starter code for labs and homework.",
+  "description": "Testing the ability to implement streaming from Soundcloud, Apple Music, etc in my own application.",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
